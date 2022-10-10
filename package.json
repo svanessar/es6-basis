@@ -1,0 +1,32 @@
+{
+  "name": "y",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "proyecto aprendizaje es6",
+  "main": "index.js",
+  "scripts": {
+    "start": "node trabajoExtra.js",
+    "dev": " nodemon trabajoExtra.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svanessar/es6-basis.git"
+  },
+  "keywords": [
+    "arreglos",
+    "funciones",
+    "objetos"
+  ],
+  "author": "vanessa realpe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svanessar/es6-basis/issues"
+  },
+  "homepage": "https://github.com/svanessar/es6-basis#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
