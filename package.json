@@ -1,12 +1,12 @@
 {
   "name": "y",
-  "type": "module",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "proyecto aprendizaje es6",
   "main": "index.js",
   "scripts": {
     "start": "node trabajoExtra.js",
-    "dev": " nodemon trabajoExtra.js"
+    "dev": " nodemon async/1_callback_xml.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "nodemon": "^2.0.20"
   },
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "xmlhttprequest": "^1.8.0"
   }
 }
