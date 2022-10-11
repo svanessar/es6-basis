@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node trabajoExtra.js",
-    "dev": " nodemon async/1_callback_xml.js"
+    "dev": " nodemon async/3_callback_request.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "colors": "^1.4.0",
+    "request": "^2.88.2",
     "xmlhttprequest": "^1.8.0"
   }
 }

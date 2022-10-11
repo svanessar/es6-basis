@@ -1,17 +1,22 @@
 let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
-let endpoint = 'https://pokeapi.co/api/v2/type'
+let endpoint = 'https://rickandmortyapi.com/api/character'
 
-function exito(response){
-console.log(JSON.parse(response))
+const exito= (response)=>{
+    const names = JSON.parse(response).results
+    names.forEach((name)=>{
+        console.log(`name: ${name.name}`)
+        console.log(`-------------------`)
+    })
+//console.log(JSON.parse(response).results)
 }
 
-function fallo(status){
+const fallo = (status)=>{
     console.log(status)
 }
 
 
-function get_data(endpoint, exito, fallo){
+const get_data = (endpoint, exito, fallo)=>{
     //CREAMOS EL OBJETO DE CONEXION A LA API
 let http=new XMLHttpRequest()
 //abrir una conexion
@@ -19,7 +24,7 @@ http.open('get',endpoint)
 //enviar la solicitud(request) a la api
 http.send()
 //hacer el tratamiento de la response
-http.onload = function(){
+http.onload = ()=>{
     if(http.status === 200){
         exito(http.responseText)
     }
