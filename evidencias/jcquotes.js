@@ -1,10 +1,10 @@
 //callback
 let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
-let endpoint = 'https://www.jcquotes.com/api/quotes/random'
+let endpoint = 'https://x-math.herokuapp.com/api/random'
 
 function exito(response){
-console.log(`texto: ${JSON.parse(response).text}`)
+console.log(`first: ${JSON.parse(response).first}`)
 }
 
 function fallo(status){
@@ -21,13 +21,12 @@ http.open('get',endpoint)
 http.send()
 //hacer el tratamiento de la response
 http.onload = function(){
-    if(http.status === 200){
+    if(http.status===200){
         exito(http.responseText)
-    }
-    else{
+    }else{
         fallo(http.status)
     }
-   
+
 }
 }
 

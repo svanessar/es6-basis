@@ -10,7 +10,7 @@ const f = async()=>{
 try{
   let response=  await axios(config)
 response.data.forEach(element=>{
-    console.log(`string: ${element.string}`)
+    console.log(`caracter: ${element.string}`)
     console.log(`------------------------`)
 })
    

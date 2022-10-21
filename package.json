@@ -1,12 +1,12 @@
 {
-  "name": "y",
+  "name": "taller2",
   "type": "commonjs",
   "version": "1.0.0",
   "description": "proyecto aprendizaje es6",
   "main": "index.js",
   "scripts": {
     "start": "node trabajoExtra.js",
-    "dev": " nodemon evidencias/jcquotes.js"
+    "dev": " nodemon evidencias/GBIT.js"
   },
   "repository": {
     "type": "git",
