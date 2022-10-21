@@ -1,3 +1,4 @@
+//callback
 let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 let endpoint = 'https://www.jcquotes.com/api/quotes/random'
