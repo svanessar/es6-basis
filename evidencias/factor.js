@@ -2,12 +2,12 @@ const axios = require('axios')
 
 let config = {
     method:'get',
-    url:'https://animechan.vercel.app/api/random'
+    url:'https://newton.now.sh/api/v2/factor/x^2-1'
 }
 const f = async()=>{
 try{
   let response=  await axios(config)
-console.log(response.data.character)
+console.log('resultado: ' +response.data.result)
    
 
 }

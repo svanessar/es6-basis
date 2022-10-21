@@ -1,3 +1,5 @@
+//metodo axios await
+
 const axios = require('axios')
 
 let config = {

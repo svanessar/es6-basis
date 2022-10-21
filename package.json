@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node trabajoExtra.js",
-    "dev": " nodemon evidencias/.js"
+    "dev": " nodemon evidencias/jcquotes.js"
   },
   "repository": {
     "type": "git",
